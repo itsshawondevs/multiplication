@@ -21,11 +21,12 @@ btn.addEventListener("click",function(){
         result.innerHTML = ""
     }else if(input.value.match(numberregex)){
         input.style.border = "1px solid red"
+        result.innerHTML = ""
     }
     else{
         input.style.border = ""
         for(let i = 1; i <= 10; i++){
-            result.innerHTML = (input.value + " x " + i + " = " + input.value*i);
+            result.innerHTML += (input.value + " x " + i + " = " + input.value*i + "<br>");
         }
     }
 })
